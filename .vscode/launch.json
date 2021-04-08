@@ -1,25 +1,4 @@
 {
   "version": "0.2.0",
-  "configurations": [
-    {
-      "name": "Run Unit test",
-      "type": "node",
-      "request": "launch",
-      "program": "${workspaceFolder}/facturas-approuter/node_modules/@sap/html5-repo-mock/index.js",
-      "args": [
-        "--standalone",
-        "/comsapui5/test/unit/unitTests.qunit.html",
-        "--ui5",
-        "{\"version\":\".\"}"
-      ],
-      "cwd": "${workspaceFolder}/sapui5",
-      "env": {
-        "PORT": "6004",
-        "MOCK_LOOKUP_DIRS": "[\"webapp\"]",
-        "run.config": "{\"handlerId\":\"ui5_run_config_handler_id\",\"runnableId\":\"/home/user/projects/facturas/sapui5\"}"
-      },
-      "envFile": "${workspaceFolder}/sapui5/.env1",
-      "preLaunchTask": "Build facturas"
-    }
-  ]
+  "configurations": []
 }
