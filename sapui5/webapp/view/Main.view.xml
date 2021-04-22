@@ -1,17 +1,7 @@
 <mvc:View controllerName="com.sapui5.controller.Main" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
     <Shell >
-        <App>
-            <pages>
-                <Page title="{i18n>appTitle}">
-                <headerContent>
-                <Button id="btnHeader" icon="sap-icon://touch" press=".onOpenDialog" text="{i18n>helloDialogBut}"  class="sapUiSmallMarginEnd"></Button>
-                </headerContent>
-                    <content>
-                        <mvc:XMLView viewName="com.sapui5.view.HelloPanel"></mvc:XMLView>
-                        <mvc:XMLView viewName="com.sapui5.view.InvoicesList"></mvc:XMLView>
-                    </content>
-                </Page>
-            </pages>
+        <App id="app">
+           
         </App>
     </Shell>
 </mvc:View>
