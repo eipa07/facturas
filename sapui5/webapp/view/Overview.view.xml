@@ -1,6 +1,10 @@
 <mvc:View controllerName="com.sapui5.controller.Main" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
     
                 <Page title="{i18n>appTitle}">
+                    <landmarkInfo>
+                    <PageAccessibleLandmarkInfo rootRole="Region" rootLabel="{i18n>overviewRootLabel}" 
+                    contentRole="Main" contentLabel="{i18n>overviewContentLabel}" headerRole="Banner" headerLabel="{i18n>overviewHeaderLabel}"
+                    ></PageAccessibleLandmarkInfo></landmarkInfo>
                 <headerContent>
                 <Button id="btnHeader" icon="sap-icon://touch" press=".onOpenDialog" text="{i18n>helloDialogBut}"  class="sapUiSmallMarginEnd"></Button>
                 </headerContent>

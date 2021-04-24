@@ -1,6 +1,6 @@
 <mvc:View controllerName="com.sapui5.controller.Main" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
     <Shell >
-        <App id="app">
+        <App id="app" >
            
         </App>
     </Shell>
