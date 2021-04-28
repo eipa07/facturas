@@ -1,7 +1,8 @@
 // @ts-nocheck
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
-    "sap/m/MessageToast"
+    "sap/m/MessageToast",
+    "sap/base/Log"
 ],
     /**
          * 
@@ -11,13 +12,23 @@ sap.ui.define([
          * 
          */
 
-    function (Controller, MessageToast) {
+    function (Controller, MessageToast, Log) {
         "use strict";
 
         return Controller.extend("com.sapui5.controller.HelloPanel", {
 
             onInit: function () {
 
+            },
+
+            onBeforeRendering: function(){
+                window.message = 'Log message - on BeforeRendering';
+                Log.info(window.message);
+                Log.error(window.message);
+            },
+
+            onAfterRendering: function(){
+                debugger;
             },
 
             onShowHello: function () {

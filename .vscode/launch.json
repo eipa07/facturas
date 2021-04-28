@@ -2,7 +2,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Run nothwind",
+      "name": "northwind",
       "type": "node",
       "request": "launch",
       "program": "${workspaceFolder}/facturas-approuter/node_modules/@sap/html5-repo-mock/index.js",
